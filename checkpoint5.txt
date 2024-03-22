@@ -1,0 +1,53 @@
+Course Checkpoint 5
+
+¿Qué es un condicional?
+
+Si hace frío en invierno, cierro la puerta, y enciendo la estufa de leña.
+Si la temperatura sube de 28ºC en verano, pongo en marcha el aire acondicionado.
+Ambas sentencias son condicionales, se utilizan muchísimo en los lenguajes de programación, y vienen a decir que, si se cumple una expresión/condición
+que solicitamos en el programa, reaccionaremos de una forma u otra.
+
+En python tenemos 3 tipos de condicionales:
+
+if: es el principal condicional. Se utiliza como si fuera un comparador, si el resultado de la comparación es verdadero, se ejecutará 
+una serie de comandos que escribiremos a continuación. 
+
+elif: este condicional siempre irá debajo de if. Si el resultado de if fuera falso, podríamos añadir otro/otros condicionales elif para ver 
+si alguno de ellos se cumple, y en ese caso ejecutar los comandos que fueren.
+
+else: el coche escoba. Si ninguno de los condicionales que se plantean por encima de else se cumplen, entonces llegaremos a éste y ejecutaremos
+el código que corresponda.
+
+Vamos con un ejemplo en el que recogeremos todos los condicionales con su estructura de codificación.
+Tenemos un termómetro en casa, el cual nos da una lectura de temperatura. Según la temperatura varíe, nos dará un mensaje de alerta
+para que interactuemos con el sistema de calefacción/refrigeración. La temperatura de confort se sitúa entre 18ºC y 24ºC, y en todo momento
+el sistema nos informará de la misma con indicaciones para mantener la casa templada.
+
+temperatura = 23
+
+if temperatura >= 24: 
+	print("Enciende el aire acondicionado, Manuel!")
+
+	#Si la temperatura es mayor o igual a 24ºC, ejecutaremos el código debajo de if y finalizamos el condicional. 	      
+	#Si la condición de temperatura no se cumple/False, saltaremos al siguiente condicional (elif)	
+
+elif temperatura <= 18:  
+	print("Enciende la estufa, Manuel!")
+
+	#Si la temperatura es menor o igual a 18ºC, ejecutaremos el código debajo de elif y finalizamos el condicional.
+else:			
+	print("Relájate Manuel, temperatura Ok")
+
+	#A else llegamos porque ninguna de las condiciones previas se han dado cumplido/True. Ejecutaremos los comandos que 
+	#sean, y daremos por finalizado el condicional.
+  
+
+¿Cuáles son los diferentes tipos de bucles en Python? ¿Por qué son útiles?
+
+¿Qué es una lista por comprensión en Python?
+
+¿Qué es un argumento en Python?
+
+¿Qué es una función Lambda en Python?
+
+¿Qué es un paquete pip?
