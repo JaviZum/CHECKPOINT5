@@ -28,23 +28,24 @@ temperatura = 23
 if temperatura >= 24: 
 	print("Enciende el aire acondicionado, Manuel!")
 
-	#Si la temperatura es mayor o igual a 24ºC, ejecutaremos el código debajo de if (indicaríamos a Manuel que ha de encender el aire acondicionado
+	#Si la temperatura es mayor o igual a 24ºC, ejecutaremos el código debajo de if (indicaríamos a 	#Manuel que ha de encender el aire acondicionado
 	#para tener un poco de fresquito en la casa) y finalizamos el condicional. 	      
 	#Si la condición de temperatura no se cumple/False, saltaremos al siguiente condicional (elif)	
 
 elif temperatura <= 18:  
 	print("Enciende la estufa, Manuel!")
 
-	#Si la temperatura es menor o igual a 18ºC, ejecutaremos el código debajo de elif y finalizamos el condicional.
+	#Si la temperatura es menor o igual a 18ºC, ejecutaremos el código debajo de elif y finalizamos el 	#condicional.
 	#Anunciaríamos a Manuel la necesidad de encender la estufa para calentar la casa.
 else:			
 	print("Relájate Manuel, temperatura Ok")
 
-	#A else llegamos porque ninguna de las condiciones previas se han dado por cumplidas/True. Mandaríamos un mensaje de tranquilidad,
-	#pues en este caso D. Manuel no tendría que hacer sino relajarse, y daremos por finalizado el condicional.
+	#A else llegamos porque ninguna de las condiciones previas se han dado por cumplidas/True. 		#Mandaríamos un mensaje de tranquilidad,
+	#pues en este caso D. Manuel no tendría que hacer sino relajarse, y daremos por finalizado el 		#condicional.
   
 
 ¿Cuáles son los diferentes tipos de bucles en Python? 
+
 Decir que un bucle es algo que se repite durante un tiempo, o mientras se de una condición.
 Dicho esto, tenemos 2 tipos diferentes:
 
@@ -64,8 +65,7 @@ Para ello crearemos una variable llamada conteo, cuyo valor iremos incrementando
 
 conteo = 0
 
-while conteo <=100: #la clave esta en este punto. Mientras el valor de conteo no alcance el valor de 100, irá imprimiendo el número, y seguidamente 
-					#sumándole 1, hasta llegar al valor 100, que entonces se dará la condición de parar.
+while conteo <=100: #la clave esta en este punto. Mientras el valor de conteo no alcance el valor de 100, irá 		    #imprimiendo el número, y seguidamente sumándole 1, hasta llegar al valor 100, que 			    #entonces se dará la condición de parar.
 	print(conteo)
 	conteo += 1
 
@@ -94,6 +94,7 @@ La expresión quedaría así: Pasa todos los valores de x en el rango de 1 hasta
 Con esto lo que conseguimos es tener una lista de nombre numeros_pares en la cual tendremos almacenados todos los números pares del rango 1 hasta el 11.
 
 ¿Qué es un argumento en Python?
+
 Argumento es uno o varios valores que se pasan a una función con los cuales ésta realice lo que esté escrito en el código.
 En la función siguiente alimentamos la funcióncon 2 argumentos numéricos.
 Seguidamente estos se suman y son asignados a la variable Suma, presentando después el resultado.
@@ -107,8 +108,7 @@ numeros_suma(7, 23)
 
 Podemos tener también en una función argumentos de diferentes tipos.
 En el ejemplo adjunto generamos una tupla de argumentos variopintos.
-La clave es la definición de los argumentos. Utilizamos un asterisco, para indicar que CUALQUIER cantidad de argumentos pueden ser pasados a la función,
-y a args -que es como una convención para nombrar a los argumentos en python- enviaremos la tupla generada.
+La clave es la definición de los argumentos. Utilizamos un asterisco, para indicar que CUALQUIER cantidad de argumentos pueden ser pasados a la función, y a args -que es como una convención para nombrar a los argumentos en python- enviaremos la tupla generada.
 
 def argumentos_posicionales(*args):
     print(args)
@@ -125,12 +125,11 @@ def argumentos_palabra_clave(**kwargs):
     
 argumentos_palabra_clave(nombre= "miguel", edad = 20, ciudad = "Madrid", profesión = "trompetista")
 
-A la función le añadimos una serie de argumentos por pares, que nos va a generar un diccionario, en el cual vamos a poder luego hacer modificaciones,
-consultas, listados, etc de forma mucho más eficaz e intuitiva.
+A la función le añadimos una serie de argumentos por pares, que nos va a generar un diccionario, en el cual vamos a poder luego hacer modificaciones, consultas, listados, etc de forma mucho más eficaz e intuitiva.
 
 ¿Qué es una función Lambda en Python?
-Es un recurso para crear funciones simples, que en momentos puntuales se utilizarán para resolver un pequeño problema,
-y que por su fugacidad y requerirse sólo para realizar una pequeña tarea no se computan como funciones ordinarias.
+
+Es un recurso para crear funciones simples, que en momentos puntuales se utilizarán para resolver un pequeño problema, y que por su fugacidad y requerirse sólo para realizar una pequeña tarea no se computan como funciones ordinarias.
 
 Su estructura es:  lambda argumentos : expresión
 
@@ -154,6 +153,7 @@ Como va a ser una función que se va a utilizar exclusivamente para facilitar el
 Si fuera una función a la que tuvieramos que acudir repetidamente, de forma recursiva en diferentes puntos del programa, usaríamos ya una convencional.
 
 ¿Qué es un paquete pip?
+
 Una herramienta que nos permite instalar/desinstalar paquetes de librerias a través de una página web de nombre Python Package Index (PyPI).
 Allá los programadores suben sus librerias, y nosotros a través del comando pip install [nombre_del_paquete], podemos instalarlo en nuestro equipo para así
 poder usar la librería en cuestión.
